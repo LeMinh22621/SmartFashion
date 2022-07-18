@@ -11,22 +11,36 @@ class _SearchBarState extends State<SearchBar> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const BoxDecoration(
-        color: Colors.red,
-        borderRadius: BorderRadius.all(
-          Radius.circular(8),
+      decoration: BoxDecoration(
+        border: Border.all(
+          color: Colors.black26,
+        ),
+        color: Colors.white70,
+        borderRadius: const BorderRadius.all(
+          Radius.circular(16),
         ),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
-        children: [
+        children: const [
+          SizedBox(width: 10),
           Icon(
             Icons.search_outlined,
             size: 30,
           ),
-          Expanded(
-            child: TextField(),
-          )
+          SizedBox(width: 10),
+          Flexible(
+            fit: FlexFit.loose,
+            child: TextField(
+              decoration: InputDecoration(
+                hintText: "Search",
+                filled: true,
+                fillColor: Colors.white70,
+                border: InputBorder.none,
+              ),
+            ),
+          ),
+          SizedBox(width: 16),
         ],
       ),
     );

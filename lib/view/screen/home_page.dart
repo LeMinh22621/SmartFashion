@@ -48,11 +48,14 @@ class _HomePageState extends State<HomePage> {
       body: Container(
         color: Colors.grey.shade50,
         child: SafeArea(
-          child: Scaffold(
-            body: Column(
-              children: [
-                SearchBar(),
-              ],
+          child: Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Scaffold(
+              body: Column(
+                children: [
+                  SearchBar(),
+                ],
+              ),
             ),
           ),
         ),
