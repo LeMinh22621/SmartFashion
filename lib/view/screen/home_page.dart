@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_fashion/view/widget/my_tab_bar.dart';
 import 'package:smart_fashion/view/widget/search_bar.dart';
 
 class HomePage extends StatefulWidget {
@@ -54,6 +55,7 @@ class _HomePageState extends State<HomePage> {
               body: Column(
                 children: [
                   SearchBar(),
+                  MyTabBar(),
                 ],
               ),
             ),
