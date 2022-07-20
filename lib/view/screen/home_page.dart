@@ -53,9 +53,23 @@ class _HomePageState extends State<HomePage> {
             padding: const EdgeInsets.all(10.0),
             child: Scaffold(
               body: Column(
-                children: [
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const [
                   SearchBar(),
                   MyTabBar(),
+                  SizedBox(height: 10),
+                  SizedBox(
+                    child: Text(
+                      "Trend Fashion",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                        fontFamily:
+                            "assets/fonts/IbarraRealNova-VariableFont_wght.ttf",
+                      ),
+                      textAlign: TextAlign.start,
+                    ),
+                  ),
                 ],
               ),
             ),

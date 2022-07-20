@@ -18,20 +18,37 @@ class _MyTabBarState extends State<MyTabBar> {
         scrollDirection: Axis.horizontal,
         children: [
           _MyItem(
-              imageStr: "assets/shirt.jpeg", size: _size, title: "clothers"),
-          _MyItem(imageStr: "assets/trouser.jpg", size: _size, title: "paints"),
-          _MyItem(imageStr: "assets/shoe.jpg", size: _size, title: "shoes"),
-          _MyItem(imageStr: "assets/hat.jpg", size: _size, title: "hats"),
-          _MyItem(imageStr: "assets/hat.jpg", size: _size, title: "hats"),
-          _MyItem(imageStr: "assets/hat.jpg", size: _size, title: "hats"),
-          _MyItem(imageStr: "assets/hat.jpg", size: _size, title: "hats"),
-          _MyItem(imageStr: "assets/hat.jpg", size: _size, title: "hats"),
-          _MyItem(imageStr: "assets/hat.jpg", size: _size, title: "hats"),
-          _MyItem(imageStr: "assets/hat.jpg", size: _size, title: "hats"),
-          _MyItem(imageStr: "assets/hat.jpg", size: _size, title: "hats"),
-          _MyItem(imageStr: "assets/hat.jpg", size: _size, title: "hats"),
-          _MyItem(imageStr: "assets/hat.jpg", size: _size, title: "hats"),
-          _MyItem(imageStr: "assets/hat.jpg", size: _size, title: "hats"),
+            imageStr: "assets/images/shirt.jpeg",
+            size: _size,
+            title: "clothers",
+          ),
+          _MyItem(
+            imageStr: "assets/images/trouser.jpg",
+            size: _size,
+            title: "paints",
+          ),
+          _MyItem(
+              imageStr: "assets/images/shoe.jpg", size: _size, title: "shoes"),
+          _MyItem(
+              imageStr: "assets/images/hat.jpg", size: _size, title: "hats"),
+          _MyItem(
+              imageStr: "assets/images/hat.jpg", size: _size, title: "hats"),
+          _MyItem(
+              imageStr: "assets/images/hat.jpg", size: _size, title: "hats"),
+          _MyItem(
+              imageStr: "assets/images/hat.jpg", size: _size, title: "hats"),
+          _MyItem(
+              imageStr: "assets/images/hat.jpg", size: _size, title: "hats"),
+          _MyItem(
+              imageStr: "assets/images/hat.jpg", size: _size, title: "hats"),
+          _MyItem(
+              imageStr: "assets/images/hat.jpg", size: _size, title: "hats"),
+          _MyItem(
+              imageStr: "assets/images/hat.jpg", size: _size, title: "hats"),
+          _MyItem(
+              imageStr: "assets/images/hat.jpg", size: _size, title: "hats"),
+          _MyItem(
+              imageStr: "assets/images/hat.jpg", size: _size, title: "hats"),
         ],
       ),
     );
