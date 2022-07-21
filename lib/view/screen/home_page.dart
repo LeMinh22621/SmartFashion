@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_fashion/view/widget/a_set.dart';
 import 'package:smart_fashion/view/widget/my_tab_bar.dart';
 import 'package:smart_fashion/view/widget/search_bar.dart';
 
@@ -70,6 +71,7 @@ class _HomePageState extends State<HomePage> {
                       textAlign: TextAlign.start,
                     ),
                   ),
+                  ASet(),
                 ],
               ),
             ),

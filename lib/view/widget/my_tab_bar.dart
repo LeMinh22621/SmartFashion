@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_fashion/view/widget/top_product_list.dart';
 
 class MyTabBar extends StatefulWidget {
   const MyTabBar({Key? key}) : super(key: key);
@@ -102,6 +103,7 @@ class _MyItem extends StatelessWidget {
               fontStyle: FontStyle.italic,
             ),
           ),
+          TopProductList(),
         ],
       ),
     );
