@@ -64,8 +64,8 @@ class _HomePageState extends State<HomePage> {
                       style: TextStyle(
                         fontSize: 30,
                         fontWeight: FontWeight.bold,
-                        fontFamily:
-                            "assets/fonts/IbarraRealNova-VariableFont_wght.ttf",
+                        fontFamily: "IbarraRealNova",
+                        fontStyle: FontStyle.normal,
                       ),
                       textAlign: TextAlign.start,
                     ),

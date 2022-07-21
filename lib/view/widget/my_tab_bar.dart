@@ -96,10 +96,10 @@ class _MyItem extends StatelessWidget {
             _title,
             textAlign: TextAlign.right,
             style: const TextStyle(
-              color: Colors.black,
               fontSize: 18,
-              fontWeight: FontWeight.bold,
-              fontFamily: "Courier",
+              fontWeight: FontWeight.normal,
+              fontFamily: "IbarraRealNova",
+              fontStyle: FontStyle.italic,
             ),
           ),
         ],
