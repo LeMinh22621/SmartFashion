@@ -1,10 +1,10 @@
 # smart_fashion
 1. Age:
-  * < 4: Trẻ em
+  * <= 4: Trẻ em
   * 5 - 12: Thanh thiếu niên
   * 13 - 20: Thanh niên
   * 21 - 39: Trung niên
-  * > 40: Người lớn tuổi
+  * >= 40: Người lớn tuổi
 2. Gender:
   * Male:
   * Female:
