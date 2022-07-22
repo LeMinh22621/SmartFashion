@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:smart_fashion/view/widget/a_set.dart';
+import 'package:smart_fashion/view/widget/detail_a_set.dart';
 import 'package:smart_fashion/view/widget/my_tab_bar.dart';
+import 'package:smart_fashion/view/widget/product_item.dart';
 import 'package:smart_fashion/view/widget/search_bar.dart';
+import 'package:smart_fashion/view/widget/top_product_list.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -13,6 +16,14 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+    Size _size = Size(
+      MediaQuery.of(context).size.width / 2,
+      MediaQuery.of(context).size.height / 2,
+    );
+    String _shirt = "assets/images/shirt/TShirt1.jpg";
+    String _paints = "assets/images/paints/paints1.jpg";
+    String _shoe = "assets/images/shoe/shoe1.jpg";
+    Color _color = Colors.white;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.grey.shade50,
@@ -55,7 +66,7 @@ class _HomePageState extends State<HomePage> {
             child: Scaffold(
               body: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   SearchBar(),
                   MyTabBar(),
                   SizedBox(height: 10),
@@ -71,7 +82,14 @@ class _HomePageState extends State<HomePage> {
                       textAlign: TextAlign.start,
                     ),
                   ),
-                  ASet(),
+                  ProductItem(
+                    size: _size,
+                    shirt: _shirt,
+                    paints: _paints,
+                    shoe: _shoe,
+                    color: _color,
+                  ),
+                  //TopProductList(),
                 ],
               ),
             ),
