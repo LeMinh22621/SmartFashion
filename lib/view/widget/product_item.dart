@@ -58,25 +58,31 @@ class _ProductItemState extends State<ProductItem> {
     return Container(
       height: _size.height,
       width: _size.width,
-      child: Expanded(
-        child: Row(
-          children: [
-            ASet(
-              size: Size(_size.width / 2.5, _size.width / 2.5),
-              shirt: _shirt,
-              shoe: _shoe,
-              color: _color,
-              paints: _paints,
-            ),
-            DetailASet(
-              size: Size(_size.width / 2.5, _size.width / 2.5),
-              shirt: _shirt,
-              paints: _paints,
-              shoe: _shoe,
-              color: _color,
-            ),
-          ],
+      decoration: BoxDecoration(
+        shape: BoxShape.rectangle,
+        border: Border.all(
+          color: Colors.cyan.shade100,
         ),
+        color: const Color.fromARGB(251, 145, 248, 255),
+        borderRadius: const BorderRadius.all(Radius.circular(16)),
+      ),
+      child: Row(
+        children: [
+          ASet(
+            size: Size(_size.width / 2.5, _size.width / 2.5),
+            shirt: _shirt,
+            shoe: _shoe,
+            color: _color,
+            paints: _paints,
+          ),
+          DetailASet(
+            size: Size(_size.width / 1.5, _size.width / 2.5),
+            shirt: _shirt,
+            paints: _paints,
+            shoe: _shoe,
+            color: _color,
+          ),
+        ],
       ),
     );
   }

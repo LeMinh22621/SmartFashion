@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_fashion/view/widget/a_set.dart';
 
 class DetailASet extends StatefulWidget {
   DetailASet(
@@ -37,7 +38,7 @@ class _DetailASetState extends State<DetailASet> {
   late String _paints;
   late String _shoe;
   late Color _color;
-
+  late List<String> _products;
   _DetailASetState(
       {Key? key,
       required size,
@@ -50,23 +51,28 @@ class _DetailASetState extends State<DetailASet> {
     _paints = paints;
     _shoe = shoe;
     _color = color;
+
+    _products = [_shirt, _paints, _shoe];
   }
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: _size.height,
-      width: _size.width,
-      child: Flexible(
-        child: GridView.count(
-          crossAxisCount: 2,
-          children: const [
-            FlutterLogo(),
-            FlutterLogo(),
-            FlutterLogo(),
-            FlutterLogo(),
-          ],
+    return Flexible(
+      child: GridView.builder(
+        gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+          maxCrossAxisExtent: 200,
+          childAspectRatio: 3 / 2,
+          crossAxisSpacing: 5,
+          mainAxisSpacing: 5,
         ),
+        itemCount: _products.length,
+        itemBuilder: (context, index) {
+          return AItem(
+            size: _size,
+            imageStr: _products[index],
+            color: _color,
+          );
+        },
       ),
     );
   }

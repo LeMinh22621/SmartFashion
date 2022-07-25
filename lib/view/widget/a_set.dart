@@ -59,7 +59,10 @@ class _ASetState extends State<ASet> {
       padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
         shape: BoxShape.rectangle,
-        borderRadius: const BorderRadius.all(Radius.circular(16)),
+        borderRadius: const BorderRadius.only(
+          topLeft: Radius.circular(16),
+          bottomLeft: Radius.circular(16),
+        ),
         border: Border.all(
           color: Colors.cyan.shade100,
         ),
